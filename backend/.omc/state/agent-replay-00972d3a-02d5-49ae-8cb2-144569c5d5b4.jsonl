@@ -1,0 +1,9 @@
+{"t":0,"agent":"a6d9ec4","agent_type":"unknown","event":"agent_stop","success":true,"duration_ms":0}
+{"t":0,"agent":"a66513e","agent_type":"unknown","event":"agent_stop","success":true,"duration_ms":0}
+{"t":0,"agent":"a0ad004","agent_type":"unknown","event":"agent_stop","success":true,"duration_ms":0}
+{"t":0,"agent":"a77b84e","agent_type":"unknown","event":"agent_stop","success":true,"duration_ms":0}
+{"t":0,"agent":"a00abf6","agent_type":"unknown","event":"agent_stop","success":true,"duration_ms":0}
+{"t":0,"agent":"system","event":"skill_invoked","skill_name":"oh-my-claudecode:hud"}
+{"t":0,"agent":"a815a43","agent_type":"unknown","event":"agent_stop","success":true,"duration_ms":0}
+{"t":0,"agent":"system","event":"skill_invoked","skill_name":"oh-my-claudecode:mcp-setup"}
+{"t":0,"agent":"abe7d82","agent_type":"unknown","event":"agent_stop","success":true,"duration_ms":0}

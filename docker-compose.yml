@@ -1,0 +1,24 @@
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    env_file: ./backend/.env
+    depends_on:
+      - ollama
+
+  frontend:
+    build: ./webpj
+    ports:
+      - "5173:5173"
+    env_file: ./webpj/.env
+
+  ollama:
+    image: ollama/ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+
+volumes:
+  ollama_data:

@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bash \"C:/Users/kjhi4/.claude/plugins/cache/omc/oh-my-claudecode/4.15.1/scripts/setup-progress.sh\" resume)"
+    ]
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1782805478630,
+  "projectRoot": "C:\\webpj",
+  "techStack": {
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "package.json"
+        ]
+      }
+    ],
+    "frameworks": [],
+    "packageManager": "npm",
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": null,
+    "scripts": {}
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [],
+    "gitBranches": null
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "backend": {
+      "path": "backend",
+      "purpose": null,
+      "fileCount": 6,
+      "lastAccessed": 1782805478584,
+      "keyFiles": [
+        "requirements.txt",
+        "scoring_rules.md",
+        "supabase_schema.sql",
+        "sync.py"
+      ]
+    },
+    "webpj": {
+      "path": "webpj",
+      "purpose": null,
+      "fileCount": 9,
+      "lastAccessed": 1782805478584,
+      "keyFiles": [
+        "index.html",
+        "package-lock.json",
+        "package.json",
+        "README.md",
+        "vite.config.js"
+      ]
+    },
+    "backend\\app": {
+      "path": "backend\\app",
+      "purpose": "Application code",
+      "fileCount": 3,
+      "lastAccessed": 1782805478599,
+      "keyFiles": [
+        "config.py",
+        "main.py",
+        "__init__.py"
+      ]
+    },
+    "webpj\\node_modules": {
+      "path": "webpj\\node_modules",
+      "purpose": "Dependencies",
+      "fileCount": 1,
+      "lastAccessed": 1782805478600,
+      "keyFiles": []
+    },
+    "webpj\\public": {
+      "path": "webpj\\public",
+      "purpose": "Public files",
+      "fileCount": 2,
+      "lastAccessed": 1782805478600,
+      "keyFiles": [
+        "favicon.svg",
+        "icons.svg"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "backend\\app\\services\\scoring_service.py",
+      "accessCount": 7,
+      "lastAccessed": 1782806788561,
+      "type": "file"
+    },
+    {
+      "path": "backend\\app\\services\\ollama_service.py",
+      "accessCount": 6,
+      "lastAccessed": 1782806967848,
+      "type": "directory"
+    },
+    {
+      "path": "backend\\app\\routers\\quiz.py",
+      "accessCount": 3,
+      "lastAccessed": 1782806968010,
+      "type": "file"
+    },
+    {
+      "path": "backend\\sync.py",
+      "accessCount": 2,
+      "lastAccessed": 1782806579130,
+      "type": "file"
+    },
+    {
+      "path": "backend\\app\\data\\scoring.py",
+      "accessCount": 2,
+      "lastAccessed": 1782806797868,
+      "type": "directory"
+    },
+    {
+      "path": "backend",
+      "accessCount": 2,
+      "lastAccessed": 1782806822491,
+      "type": "directory"
+    },
+    {
+      "path": "backend\\app\\services\\supabase_service.py",
+      "accessCount": 1,
+      "lastAccessed": 1782805651259,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}

@@ -1,0 +1,22 @@
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+from app.routers import recommend, agents, quiz
+
+app = FastAPI(title="Valorant Recommender API")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+app.include_router(recommend.router, prefix="/recommend", tags=["recommend"])
+app.include_router(agents.router, prefix="/agents", tags=["agents"])
+app.include_router(quiz.router, prefix="/quiz", tags=["quiz"])
+
+
+@app.get("/health")
+def health():
+    return {"status": "ok"}
