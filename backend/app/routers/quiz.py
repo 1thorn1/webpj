@@ -2,7 +2,7 @@ from fastapi import APIRouter
 from pydantic import BaseModel
 from app.data.scoring import QUESTIONS
 from app.services.scoring_service import calculate_scores, get_flash_agents
-from app.services.ollama_service import generate
+from app.services.deepseek_service import generate
 
 router = APIRouter()
 

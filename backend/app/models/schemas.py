@@ -8,10 +8,16 @@ class RecommendRequest(BaseModel):
     existing_agents: Optional[list[str]] = []
 
 
+class Source(BaseModel):
+    title: str
+    url: str
+
+
 class RecommendResponse(BaseModel):
     agents: list[str]
     reason: str
     composition: str
+    sources: list[Source] = []
 
 
 class Agent(BaseModel):

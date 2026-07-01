@@ -50,6 +50,54 @@ export default function ResultCard({ result, map }) {
         }}>
           {result.reason}
         </div>
+
+        {/* 검색 근거 */}
+        {result.sources && result.sources.length > 0 ? (
+          <div style={{ marginTop: 24 }}>
+            <div style={{
+              fontFamily: "var(--font-mono)",
+              fontSize: 11,
+              letterSpacing: "0.12em",
+              textTransform: "uppercase",
+              color: "var(--text-on-dark-3)",
+              marginBottom: 8,
+            }}>
+              참고한 최신 자료
+            </div>
+            <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
+              {result.sources.map((s, i) => (
+                <a
+                  key={i}
+                  href={s.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{
+                    fontFamily: "var(--font-body)",
+                    fontSize: 12,
+                    color: "var(--accent)",
+                    textDecoration: "none",
+                  }}
+                >
+                  {s.title}
+                </a>
+              ))}
+            </div>
+          </div>
+        ) : (
+          <div style={{
+            marginTop: 20,
+            fontFamily: "var(--font-mono)",
+            fontSize: 11,
+            letterSpacing: "0.04em",
+            color: "var(--text-on-dark-3)",
+          }}>
+            이 조합은 AI가 생성한 참고용 제안입니다. 실제 최신 승률·픽률은{" "}
+            <a href="https://dak.gg/valorant" target="_blank" rel="noreferrer" style={{ color: "var(--accent)" }}>dak.gg</a>
+            {" · "}
+            <a href="https://www.vlr.gg" target="_blank" rel="noreferrer" style={{ color: "var(--accent)" }}>vlr.gg</a>
+            에서 확인하세요.
+          </div>
+        )}
       </div>
     </div>
   );

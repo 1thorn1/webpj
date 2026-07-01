@@ -3,6 +3,7 @@ import ResultCard from "../components/ResultCard";
 import LoginButton from "../components/LoginButton";
 import Quiz from "../components/Quiz";
 import QuizResult from "../components/QuizResult";
+import Chat from "../components/Chat";
 import { useRecommend } from "../hooks/useRecommend";
 import { useState } from "react";
 
@@ -94,6 +95,7 @@ export default function Home() {
           {[
             { key: "map",  label: "맵 기반 조합 추천" },
             { key: "quiz", label: "내 스타일로 요원 찾기" },
+            { key: "chat", label: "AI 코치에게 질문하기" },
           ].map(tab => (
             <button
               key={tab.key}
@@ -148,6 +150,9 @@ export default function Home() {
             ? <QuizResult result={quizResult} onReset={() => setQuizResult(null)} />
             : <Quiz onResult={setQuizResult} />
         )}
+
+        {/* AI 챗봇 */}
+        {mode === "chat" && <Chat />}
       </div>
 
       {/* Footer */}
