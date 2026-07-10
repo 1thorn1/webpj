@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(bash \"C:/Users/kjhi4/.claude/plugins/cache/omc/oh-my-claudecode/4.15.1/scripts/setup-progress.sh\" resume)"
+      "Bash(bash \"C:/Users/kjhi4/.claude/plugins/cache/omc/oh-my-claudecode/4.15.1/scripts/setup-progress.sh\" resume)",
+      "Bash(grep -rnE \"\\(api_key|API_KEY\\)\\\\s*[:=]\\\\s*['\\\\\"][A-Za-z0-9_\\\\-]{15,}\" .)",
+      "Bash(grep -rnE \"['\\\\\"]sk-[A-Za-z0-9]{20,}['\\\\\"]|['\\\\\"][A-Za-z0-9_\\\\-]{30,}['\\\\\"]\" --include=\"*.py\" --include=\"*.js\" --include=\"*.ts\" --include=\"*.tsx\" --include=\"*.json\" /Users/thorn/project/webpj)"
     ]
   }
 }
